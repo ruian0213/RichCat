@@ -1,2 +1,2 @@
 # RichCat
-this project is for test.
+这个项目用来测试使用现在主流的一些技术栈,主要目的是用来学习；
