@@ -18,6 +18,14 @@ namespace RichCat.Web
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                .ConfigureLogging(logging=> //log4net 是支持控制反转的
+                {
+                    //忽略掉原日志组件
+                    logging.AddFilter("System", LogLevel.Warning);
+                    logging.AddFilter("Microsoft", LogLevel.Warning);
+                    //设置log4net
+                    logging.AddLog4Net(".\\ConfigFile\\log4net.config");
+                })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();

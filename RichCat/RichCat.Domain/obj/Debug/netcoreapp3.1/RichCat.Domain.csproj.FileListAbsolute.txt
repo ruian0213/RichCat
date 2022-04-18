@@ -1,0 +1,10 @@
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Domain\bin\Debug\netcoreapp3.1\RichCat.Domain.deps.json
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Domain\bin\Debug\netcoreapp3.1\RichCat.Domain.dll
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Domain\bin\Debug\netcoreapp3.1\RichCat.Domain.pdb
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Domain\obj\Debug\netcoreapp3.1\RichCat.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Domain\obj\Debug\netcoreapp3.1\RichCat.Domain.AssemblyInfoInputs.cache
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Domain\obj\Debug\netcoreapp3.1\RichCat.Domain.AssemblyInfo.cs
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Domain\obj\Debug\netcoreapp3.1\RichCat.Domain.csproj.CoreCompileInputs.cache
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Domain\obj\Debug\netcoreapp3.1\RichCat.Domain.dll
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Domain\obj\Debug\netcoreapp3.1\RichCat.Domain.pdb
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Domain\obj\Debug\netcoreapp3.1\RichCat.Domain.csproj.AssemblyReference.cache

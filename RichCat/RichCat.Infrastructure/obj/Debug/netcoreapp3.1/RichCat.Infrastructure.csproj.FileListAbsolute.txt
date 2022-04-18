@@ -1,0 +1,16 @@
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Infrastructure\bin\Debug\netcoreapp3.1\RichCat.Infrastructure.deps.json
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Infrastructure\bin\Debug\netcoreapp3.1\RichCat.Infrastructure.runtimeconfig.json
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Infrastructure\bin\Debug\netcoreapp3.1\RichCat.Infrastructure.runtimeconfig.dev.json
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Infrastructure\bin\Debug\netcoreapp3.1\RichCat.Infrastructure.dll
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Infrastructure\bin\Debug\netcoreapp3.1\RichCat.Infrastructure.pdb
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Infrastructure\bin\Debug\netcoreapp3.1\RichCat.Domain.dll
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Infrastructure\bin\Debug\netcoreapp3.1\RichCat.Domain.pdb
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Infrastructure\obj\Debug\netcoreapp3.1\RichCat.Infrastructure.csproj.AssemblyReference.cache
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Infrastructure\obj\Debug\netcoreapp3.1\RichCat.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Infrastructure\obj\Debug\netcoreapp3.1\RichCat.Infrastructure.AssemblyInfoInputs.cache
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Infrastructure\obj\Debug\netcoreapp3.1\RichCat.Infrastructure.AssemblyInfo.cs
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Infrastructure\obj\Debug\netcoreapp3.1\RichCat.Infrastructure.csproj.CoreCompileInputs.cache
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Infrastructure\obj\Debug\netcoreapp3.1\RichCat.Infrastructure.csproj.CopyComplete
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Infrastructure\obj\Debug\netcoreapp3.1\RichCat.Infrastructure.dll
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Infrastructure\obj\Debug\netcoreapp3.1\RichCat.Infrastructure.pdb
+F:\Workspace\Projects\Learning\RichCat\RichCat\RichCat.Infrastructure\obj\Debug\netcoreapp3.1\RichCat.Infrastructure.genruntimeconfig.cache

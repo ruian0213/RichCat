@@ -1,0 +1,119 @@
+﻿IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+
+GO
+
+CREATE TABLE [DEPARTMENTs] (
+    [ID] uniqueidentifier NOT NULL,
+    [DEPARTMENT_NAME] nvarchar(64) NOT NULL,
+    [PARENT_ID] uniqueidentifier NOT NULL,
+    [DEPARTMENT_LEVEL] int NOT NULL,
+    [STATUS] int NOT NULL,
+    CONSTRAINT [PK_DEPARTMENTs] PRIMARY KEY ([ID])
+);
+
+GO
+
+CREATE TABLE [MENUs] (
+    [ID] uniqueidentifier NOT NULL,
+    [MENU_NAME] nvarchar(64) NOT NULL,
+    [MENU_URL] nvarchar(1024) NOT NULL,
+    [PARENT_ID] uniqueidentifier NOT NULL,
+    [MENU_LEVEL] int NOT NULL,
+    [SORT_ORDER] nvarchar(64) NOT NULL,
+    [STATUS] int NOT NULL,
+    [REMARK] nvarchar(64) NOT NULL,
+    [MENU_ICO] nvarchar(1024) NULL,
+    CONSTRAINT [PK_MENUs] PRIMARY KEY ([ID])
+);
+
+GO
+
+CREATE TABLE [ROLEs] (
+    [ID] uniqueidentifier NOT NULL,
+    [ROLE_NAME] nvarchar(64) NOT NULL,
+    [DESCRIPTION] nvarchar(1024) NOT NULL,
+    [CREATETIME] datetime2 NULL,
+    [MODIFYTIME] datetime2 NULL,
+    [ROLE_DEFAULTURL] nvarchar(max) NULL,
+    CONSTRAINT [PK_ROLEs] PRIMARY KEY ([ID])
+);
+
+GO
+
+CREATE TABLE [USERSs] (
+    [ID] uniqueidentifier NOT NULL,
+    [USER_NAME] nvarchar(64) NOT NULL,
+    [USER_PASSWORD] nvarchar(512) NOT NULL,
+    [FULLNAME] nvarchar(128) NOT NULL,
+    [DEPARTMENT_ID] uniqueidentifier NOT NULL,
+    [STATUS] int NOT NULL,
+    [CREATETIME] date NULL,
+    [MODIFYTIME] date NULL,
+    [REMARK] nvarchar(max) NULL,
+    [TB_DEPARTMENTID] uniqueidentifier NULL,
+    CONSTRAINT [PK_USERSs] PRIMARY KEY ([ID]),
+    CONSTRAINT [FK_USERSs_DEPARTMENTs_TB_DEPARTMENTID] FOREIGN KEY ([TB_DEPARTMENTID]) REFERENCES [DEPARTMENTs] ([ID]) ON DELETE NO ACTION
+);
+
+GO
+
+CREATE TABLE [TB_MENUROLEs] (
+    [ID] uniqueidentifier NOT NULL,
+    [ROLE_ID] uniqueidentifier NOT NULL,
+    [MENU_ID] uniqueidentifier NOT NULL,
+    [ROLE_TYPE] int NOT NULL,
+    [BUTTON_ID] nvarchar(64) NOT NULL,
+    [TB_MENUID] uniqueidentifier NULL,
+    [TB_ROLEID] uniqueidentifier NULL,
+    CONSTRAINT [PK_TB_MENUROLEs] PRIMARY KEY ([ID]),
+    CONSTRAINT [FK_TB_MENUROLEs_MENUs_TB_MENUID] FOREIGN KEY ([TB_MENUID]) REFERENCES [MENUs] ([ID]) ON DELETE NO ACTION,
+    CONSTRAINT [FK_TB_MENUROLEs_ROLEs_TB_ROLEID] FOREIGN KEY ([TB_ROLEID]) REFERENCES [ROLEs] ([ID]) ON DELETE NO ACTION
+);
+
+GO
+
+CREATE TABLE [USERROLEs] (
+    [ID] uniqueidentifier NOT NULL,
+    [ROLE_ID] uniqueidentifier NOT NULL,
+    [USER_ID] uniqueidentifier NOT NULL,
+    [TB_ROLEID] uniqueidentifier NULL,
+    [TB_USERSID] uniqueidentifier NULL,
+    CONSTRAINT [PK_USERROLEs] PRIMARY KEY ([ID]),
+    CONSTRAINT [FK_USERROLEs_ROLEs_TB_ROLEID] FOREIGN KEY ([TB_ROLEID]) REFERENCES [ROLEs] ([ID]) ON DELETE NO ACTION,
+    CONSTRAINT [FK_USERROLEs_USERSs_TB_USERSID] FOREIGN KEY ([TB_USERSID]) REFERENCES [USERSs] ([ID]) ON DELETE NO ACTION
+);
+
+GO
+
+CREATE INDEX [IX_TB_MENUROLEs_TB_MENUID] ON [TB_MENUROLEs] ([TB_MENUID]);
+
+GO
+
+CREATE INDEX [IX_TB_MENUROLEs_TB_ROLEID] ON [TB_MENUROLEs] ([TB_ROLEID]);
+
+GO
+
+CREATE INDEX [IX_USERROLEs_TB_ROLEID] ON [USERROLEs] ([TB_ROLEID]);
+
+GO
+
+CREATE INDEX [IX_USERROLEs_TB_USERSID] ON [USERROLEs] ([TB_USERSID]);
+
+GO
+
+CREATE INDEX [IX_USERSs_TB_DEPARTMENTID] ON [USERSs] ([TB_DEPARTMENTID]);
+
+GO
+
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20220417073206_InitailRichCat', N'3.1.24');
+
+GO
+

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "3k14slpWStkBEXhirzWrPzrVAPbBVFqrwPNPQg74bFHRBhl3XP0J4yzmvp988sQvN62/qEMxVbsu/Kiu/SQIrg==",
+  "success": true,
+  "projectFilePath": "F:\\Workspace\\Projects\\Learning\\RichCat\\RichCat\\RichCat.Domain\\RichCat.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\allon\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\allon\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

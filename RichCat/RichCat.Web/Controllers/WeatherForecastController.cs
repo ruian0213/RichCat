@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace RichCat.Web.Controllers
 {
+    [ApiExplorerSettings(GroupName = "v2")]
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
